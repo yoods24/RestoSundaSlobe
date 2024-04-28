@@ -1,0 +1,439 @@
+@font-face {
+  font-family: "GT Sectra Book";
+  src: url("https://db.onlinewebfonts.com/t/e20953cc1e4a860f83954b5da07b4243.eot");
+  src: url("https://db.onlinewebfonts.com/t/e20953cc1e4a860f83954b5da07b4243.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e20953cc1e4a860f83954b5da07b4243.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e20953cc1e4a860f83954b5da07b4243.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/e20953cc1e4a860f83954b5da07b4243.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e20953cc1e4a860f83954b5da07b4243.svg#GT Sectra Book")
+      format("svg");
+}
+
+.kontener {
+  width: 90%;
+  margin: 30px auto;
+  background-color: rgb(213, 149, 102);
+  padding: 20px 0;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.kontener h3 {
+  color: white;
+  margin-left: 20px;
+  letter-spacing: 5px;
+}
+
+.kontener h2 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: white;
+  margin-left: 38%;
+}
+
+.br {
+  margin-bottom: 2%;
+  margin-left: 1.5%;
+  width: 30%;
+  border: 1px solid rgb(134, 99, 44);
+}
+
+.kelompok {
+  letter-spacing: 10px;
+  margin-left: 10px;
+}
+
+.header {
+  background-color: rgb(196, 124, 98);
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  color: white;
+  align-items: center;
+  height: 60px;
+  flex-direction: row;
+}
+
+.header-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  letter-spacing: 10px;
+  margin-left: 10%;
+}
+
+.header p {
+  justify-self: flex-start;
+}
+
+.card-container {
+  transition: 0.3s;
+  display: inline-grid;
+  position: relative;
+  margin-left: 20px;
+  width: 13%;
+  background-color: black;
+}
+
+.mhs-image {
+  transition: 0.3s;
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+.card-container:hover .data-container {
+  height: 30%;
+}
+
+.card-container:hover {
+  transition: 0.3s;
+  margin: 0 10px 0 25px;
+}
+
+.card-container:hover .mhs-image {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.data-container {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  background-color: #edcab5;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.card-text {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  white-space: nowrap;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.arrow-top {
+  content: "\219D";
+}
+
+.hov {
+  margin-left: 30%;
+  font-size: 15px;
+  color: beige;
+}
+
+.hov span {
+  font-size: 40px;
+  margin: 10px;
+}
+
+/* Base styling for the banner */
+
+.banner {
+  position: relative;
+  /* This is needed to position the pseudo-element correctly */
+  background-image: url(https://blog-images.reddoorz.com/uploads/image/file/11814/makanan-khas-sunda-yang-menggugah-selera-kamu-pasti-suka.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  width: 100%;
+  background-color: black;
+}
+
+.main {
+  margin: 0 auto;
+  width: 90%;
+}
+
+/* Pseudo-element for the overlay */
+
+.banner::before {
+  content: "";
+  position: absolute;
+  /* Absolute position so it can cover the whole banner */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  /* Transparent by default */
+  transition: background-color 0.3s;
+  /* Smooth transition on hover */
+}
+
+/* Darken the overlay on hover */
+
+.banner:hover::before {
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Adjust the alpha value for desired darkness */
+}
+.banner:hover .sunda-slobe {
+  opacity: 1;
+  color: white;
+  background-color: transparent;
+}
+
+.dive-in-btn {
+  position: absolute;
+  color: white;
+  background-color: rgb(11, 63, 11);
+  transition: 0.3s;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 5px;
+  padding: 20px;
+  width: 100px;
+}
+
+.dive-in-btn:hover {
+  transition: 0.3s;
+  background-color: rgb(13, 105, 13);
+}
+
+.menu-grid {
+  opacity: 0.8;
+  background-color: white;
+  transition: 0.3s;
+  border-radius: 7px;
+  margin-top: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-family: "GT Sectra Book";
+  border: 1px solid rgb(227, 187, 119);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: start;
+}
+
+.menu-grid:hover {
+  opacity: 1;
+  margin: 30px;
+}
+
+.img-menu {
+  width: 20%;
+  display: inline-grid;
+}
+
+.img-menu img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  display: inline-block;
+}
+
+.arrowdown {
+  margin: 5%;
+  align-items: center;
+}
+
+.about-menu {
+  margin-top: 5px;
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.about-menu h4 {
+  font-weight: bold;
+}
+
+.fa-arrow-down {
+  cursor: pointer;
+  color: black;
+}
+
+.fa-arrow-down:hover {
+  opacity: 0.7;
+}
+
+.text-overlay {
+  border-radius: 8px;
+  margin: 0 auto;
+  background-color: white;
+  height: 150px;
+  box-shadow: 0 -5px 5px -5px #333;
+}
+
+.text-overlay p {
+  padding: 20px;
+}
+
+.menu-name {
+  margin-right: 5px;
+}
+
+.fa-star {
+  margin: 5px;
+  color: coral;
+}
+
+.fa-star span {
+  color: black;
+}
+
+.button-30 {
+  margin: 5px;
+  align-items: center;
+  appearance: none;
+  background-color: #fcfcfd;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395a;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.button-30:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.total-value,
+.total-label {
+  font-size: 20px;
+}
+
+.beli-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.beli-button:hover {
+  background-color: #0056b3;
+}
+
+/* CSS */
+.button-33 {
+  width: 150px;
+  bottom: 15px;
+  right: 15px;
+  position: absolute;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-33:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.total-container {
+  background-color: #ffffff;
+  margin: 30px 0;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.total-item {
+  margin-top: 20px;
+}
+
+.total-label {
+  font-weight: bold;
+}
+
+.total-value {
+  font-size: 18px;
+}
+
+.beli-button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.beli-button:hover {
+  background-color: #45a049;
+}
+.sunda-slobe {
+  font-family: "GT Sectra Book";
+  color: white;
+  letter-spacing: 3px;
+  font-weight: bold;
+  position: absolute;
+  right: 10%;
+}

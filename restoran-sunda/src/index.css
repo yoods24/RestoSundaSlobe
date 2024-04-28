@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  background-color: antiquewhite;
+  height: 2000px;
+}
+
+* {
+  box-sizing: border-box;
+}
